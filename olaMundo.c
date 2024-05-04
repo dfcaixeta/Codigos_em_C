@@ -1,5 +1,5 @@
 // Código oláMundo.
-// Autor: @dfcaixeta - Data: 04.mai.2024
+// Autor: @dfcaixeta - Data: 04.mai.2024 
 
 /* Neste código foi incluído a função setlocale por causa da acentuação do idioma PT-BR */
 
