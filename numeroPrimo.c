@@ -1,36 +1,36 @@
-/* Programa que informa se um número é primo.
+/* Programa que informa se um nï¿½mero ï¿½ primo.
 /Autor: @dfcaixeta - Data: 05.mai.2024
 */
 
-// Declaração das bibliotecas
+// DeclaraÃ§Ã£o das bibliotecas
 #include <stdio.h>
 #include <math.h>
 #include <locale.h>
 
-// Corpo do código
+// Corpo do cÃ³digo
 
 int main() {
 
-    // Função para ajuste para o idioma pt-BR (UTF-8 -> ISO8859-1)
+    // FunÃ§Ã£o para ajuste para o idioma pt-BR (UTF-8 -> ISO8859-1)
     setlocale(LC_ALL, "");
 
-    // Declaração das variáveis
+    // DeclaraÃ§Ã£o das variÃ¡veis
     int num, i, primo = 1;
 
-    // Solicita ao usuário para inserir o número
-    printf("\nDigite um número inteiro positivo: ");
+    // Solicita ao usuÃ¡rio para inserir o nÃºmero
+    printf("\nDigite um nÃºmero inteiro positivo: ");
 
     //%d -> String de controle. Indica que o printf() deve colocar um inteiro na tela.
     scanf("%d", &num);
 
-    // Verifica se o número é menor que 2
+    // Verifica se o nÃºmero Ã© menor que 2
     if (num < 2) {
         primo = 0;
     } else {
-        // Verifica se o número é divisível por algum número inteiro entre 2 e a raiz quadrada do número
+        // Verifica se o nÃºmero Ã© divisÃ­vel por algum nÃºmero inteiro entre 2 e a raiz quadrada do nÃºmero
         for (i = 2; i <= sqrt(num); i++) {
             if (num % i == 0) {
-                primo = 0; // Não é primo
+                primo = 0; // NÃ£o Ã© primo
                 break;
             }
         }
@@ -38,9 +38,9 @@ int main() {
 
     // Exibe o resultado
     if (primo) {
-        printf("\n%d é um número primo.", num);
+        printf("\n%d Ã© um nÃºmero primo.", num);
     } else {
-        printf("\n%d não é um número primo.", num);
+        printf("\n%d nÃ£o Ã© um nÃºmero primo.", num);
     }
 
     return 0;
