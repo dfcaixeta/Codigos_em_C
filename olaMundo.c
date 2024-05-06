@@ -1,4 +1,4 @@
-// Código oláMundo.
+// Código olá Mundo.
 // Autor: @dfcaixeta - Data: 04.mai.2024 
 
 /* Neste código foi incluído a função setlocale por causa da acentuação do idioma PT-BR */
@@ -10,10 +10,9 @@
 int main() 
 {
     setlocale(LC_ALL, "");
-    printf("Olá mundo\n"); // - \n quebra de linha ...
+    printf("\n'Olá mundo!'\n\n"); // - \n quebra de linha ...
 
     return 0;
-
 }
 
 /* Explicações do código [...]
@@ -31,13 +30,13 @@ int main()
 ao S.O que o programa foi bem sucedido. Caso seja retornado outro número o código deu uma condição de erro.
 
 3. Blocos em chaves
-{
-Representa o corpo do codigo main. Nele colocamos as declaraões de variáveis e sentenças ou lógica 
-do programa 
-}
+    {
+    Representa o corpo do codigo main. Nele colocamos as declarações de variáveis e sentenças ou lógica 
+    do programa 
+    }
 
 4. ponto e vírgula (;) -> É REGRA não excessão!
 
 5. return 0 -> return: Encerra a função main retornando para o S.O.
-            Se retornar 0 (zero) programa bem sucedido, SENÃO, há uma condição de erro no código.
+            Se retornar 0 (zero) programa bem sucedido, SENãO, há uma condição de erro no código.
 */
