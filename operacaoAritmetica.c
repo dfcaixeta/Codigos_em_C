@@ -26,5 +26,5 @@ int main() {
     } else {
         printf("\nNão é possível dividir por zero.\n\n");
     }
-    return 0;
+    return 0; 
 }
